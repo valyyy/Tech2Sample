@@ -8,6 +8,10 @@ Feature: Register
   Scenarios:
     | field         | error                    |
     | user_email    | Email mora biti ispunjeno   |
+    |user_password  |   Lozinka mora biti ispunjeno |
+    |user_password_confirmation  |   Lozinka se ne slaže sa svojom potvrdom |
+    |user_company_name  |   Ime tvrtke mora biti ispunjeno   |
+    |user_oib  |   OIB nije odgovarajuće dužine (mora imati 11 karaktera)   |
 
   Scenario Outline: Trying to register using valid/invalid information
     Given I am on RegisterPage
