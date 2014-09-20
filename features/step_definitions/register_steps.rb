@@ -14,3 +14,6 @@ Then(/^I should see the (.*)/) do |errorMsg|
   expect(on(RegisterPage).error).to eq(errorMsg)
 end
 
+Then(/^I should see this /) do |error|
+  expect(on(RegisterPage).error_group).to eq(error)
+end

@@ -13,6 +13,6 @@ class LoginPage
     end
     self.username = username
     self.password = password
-    self.loginButton
+    loginButton
   end
 end
